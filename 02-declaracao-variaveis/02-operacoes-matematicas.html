@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operações Matemáticas</title>
+</head>
+<body>
+    <h1>Calculadora Simples</h1>
+    <script>
+        // Solicitar dois valores ao usuário
+        var valor1 = parseFloat(prompt("Digite o primeiro valor: "));
+        var valor2 = parseFloat(prompt("Digite o segundo valor: "));
+
+        // Verificar se os valores são validos (numeros)
+        if (isNaN(valor1) || isNaN(valor2)) {
+            document.write("Valores inválidos. Certifique-se de digitar números validos.");
+        } else {
+            // Realizar operações de adição e subtração e subtração
+
+            let soma;
+            soma = valor1 + valor2;
+
+            var subtracao = valor1 - valor2;
+            var multiplicacao = valor1 * valor2;
+            var divisao = valor1 / valor2;
+            var restoDivisao = valor1 % valor2;
+            var exponenciacao = valor1 ** valor2;
+            var incremento = ++valor1;
+            var decremento = --valor2;
+
+            // Exibir os resultados no HTML
+            document.write(`Adicao: ${valor1} + ${valor2} = ${soma} <br>`);
+            document.write(`Subtracao: ${valor1} - ${valor2} = ${subtracao} <br>`);
+            document.write(`Multiplicacao: ${valor1} * ${valor2} = ${multiplicacao} <br>`);
+            document.write(`Divisao: ${valor1} / ${valor2} = ${divisao} <br>`);
+            document.write(`Resto da Divisao: ${valor1} % ${valor2} = ${restoDivisao} <br>`);
+            document.write(`Exponenciacao: ${valor1} ** ${valor2} = ${exponenciacao} <br>`);
+            document.write(`Incremento: ++${valor1} = ${incremento} <br>`);
+            document.write(`Decremento: --${valor2} = ${decremento} <br>`);
+        }
+    </script>
+</body>
+
+</html>
